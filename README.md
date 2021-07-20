@@ -1,2 +1,2 @@
-# IdaMurni-contact
+# IdaMurni-contract
 smart-contract
