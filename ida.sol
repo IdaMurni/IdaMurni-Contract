@@ -13,6 +13,7 @@ contract IdaMurni is ERC20 {
     constructor(uint256 initialSupply) public ERC20("IdaMurni", "IDA") {
         _mint(msg.sender, initialSupply);
         owner = msg.sender;
+        excludedFromTax[msg.sender] = true;
     }
     
     function transfer(address recipient, uint256 amount) public override returns(bool){
